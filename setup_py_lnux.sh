@@ -5,6 +5,10 @@ set -e
 echo "Cập nhật hệ thống..."
 sudo apt update && sudo apt upgrade -y
 
+echo "Cloning ht-xtts repository..."
+git clone https://github.com/huutuan99bg/ht-xtts
+cd ht-xtts
+
 echo "Thêm PPA deadsnakes để cài Python 3.10..."
 sudo add-apt-repository -y ppa:deadsnakes/ppa
 sudo apt update
