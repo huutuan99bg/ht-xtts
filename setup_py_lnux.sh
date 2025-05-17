@@ -32,6 +32,6 @@ echo "Cài đặt các công cụ build và thư viện hỗ trợ..."
 sudo apt install -y build-essential pkg-config libffi-dev libsndfile1 ffmpeg
 
 echo "Cài các thư viện trong file linux_requirements.txt..."
-pip install -r linux_requirements.txt
+python3.10 -m pip install -r linux_requirements.txt
 
 echo "Hoàn thành!"
