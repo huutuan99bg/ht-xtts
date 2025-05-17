@@ -5,6 +5,10 @@ set -e
 echo "Cập nhật hệ thống..."
 sudo apt update && sudo apt upgrade -y
 
+# echo "Cloning ht-xtts repository..."
+# git clone https://github.com/huutuan99bg/ht-xtts
+# cd ht-xtts
+
 echo "Thêm PPA deadsnakes để cài Python 3.10..."
 sudo add-apt-repository -y ppa:deadsnakes/ppa
 sudo apt update
@@ -33,5 +37,8 @@ sudo apt install -y build-essential pkg-config libffi-dev libsndfile1 ffmpeg
 
 echo "Cài các thư viện trong file linux_requirements.txt..."
 python3.10 -m pip install -r linux_requirements.txt
+
+echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/.bashrc
+source ~/.bashrc
 
 echo "Hoàn thành!"
