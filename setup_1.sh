@@ -5,9 +5,6 @@ set -e
 echo "Cập nhật hệ thống..."
 sudo apt update && sudo apt upgrade -y
 
-echo "Cài distutils (nếu cần)..."
-sudo apt install -y python3.12-distutils
-
 echo "Tải và cài pip cho Python 3.12..."
 curl -sS https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python3.12 get-pip.py

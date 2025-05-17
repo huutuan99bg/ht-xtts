@@ -4,3 +4,7 @@ cd ht-xtts
 
 chmod +x setup_py_linux.sh
 ./setup_py_linux.sh
+
+
+chmod +x setup_1.sh
+./setup_1.sh
