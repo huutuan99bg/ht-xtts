@@ -1,0 +1,19 @@
+sudo apt update && sudo apt upgrade -y
+
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt update
+sudo apt install python3.10 python3.10-venv python3.10-distutils python3.10-dev -y
+
+python3.10 --version
+
+sudo apt install python3.10-distutils
+curl -sS https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python3.10 get-pip.py
+
+python3.10 -m pip --version
+
+python3.10 -m pip install --upgrade pip setuptools wheel
+
+sudo apt install build-essential pkg-config libffi-dev libsndfile1 ffmpeg -y
+
+pip install -r linux_requirements.txt
